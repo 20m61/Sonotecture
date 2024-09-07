@@ -4,7 +4,11 @@ export const getDeviceOrientation = (callback: (alpha: number) => void) => {
       'deviceorientation',
       (event) => {
         const alpha = event.alpha; // 北を基準にデバイスの方位を取得
-        callback(alpha);
+
+        if (alpha !== null) {
+          // alphaがnullでない場合のみcallbackを呼び出す
+          callback(alpha);
+        }
       },
       true,
     );
