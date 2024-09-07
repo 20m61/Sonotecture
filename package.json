@@ -25,5 +25,9 @@
     "eslint-plugin-prettier": "^5.2.1",
     "prettier": "^3.3.3",
     "typescript": "^5"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/20m61/Sonotecture",
+  "author": "20m61 <ifm0s1m0s1m0nn@hotmail.com>",
+  "license": "MIT"
 }
